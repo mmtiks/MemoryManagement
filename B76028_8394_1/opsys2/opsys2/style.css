@@ -1,0 +1,97 @@
+html{
+    background-color: #EBE9E9;
+    font-family:'Courier New', Courier, monospace;
+
+}
+body{
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    margin-bottom:0px
+}
+h2{
+    font-size: 25px;
+    margin-top: 5px;
+}
+h3{
+    margin: 0px;
+    margin-top:-10px;
+}
+
+
+/* REAL STUFF BELOW */
+
+
+
+#choices{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.row{
+    margin:auto;
+    margin-bottom: 0px !important;
+    width:40%;
+    
+}
+
+#numbers4{
+    width:370px;
+}
+
+.option{
+  float:left;
+}
+
+.row p{
+    float:right;
+    margin: 0;
+}
+
+#numbers4 {
+    float:right;
+    margin: 0;
+
+}
+
+
+button {
+    margin-top:5px;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: solid 1px black;
+    border-radius:10px;
+    background-color: #F1E9DB;
+}
+
+/* GRID */
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    background-color: #F1E9DB;
+    display: grid;
+    margin-top:10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px black dotted;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  
+  .grid-item {
+    font-size:15px;
+    padding: 2px;
+    border: 1px solid black;
+    text-align: center;
+  }

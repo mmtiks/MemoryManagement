@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>OpSys HW2</title>
+</head>
+<body>
+  <header>
+    <h1>Salvestusruumi haldus</h1>
+    <h2>Mihkel Tiks</h2>
+  </header>
+  <main>
+    <h3>
+      Vali või sisesta kuni järjend
+      (kujul A,2;B,3;A,-;C,4;B,+3;D,5;E,15;C,-;F,5). Max 10 faili.
+    </h3>
+    <div id="choices">
+      <div class ='row'>
+        <div class = 'option'>
+      <input type="radio" id="pattern1" name="patterns" value="numbers1" checked/>
+      <label for="pattern1">Esimene:</label>
+        </div>
+      <p  id="numbers1">A,2;B,3;A,-;C,4;B,+3;D,5;E,15;C,-;F,5</p>
+      </div>
+      <div class ='row'>
+        <div class = 'option'>
+      <input type="radio" id="pattern2" name="patterns" value="numbers2" />
+      <label for="pattern2" >Teine:</label>
+        </div>
+      <p  id="numbers2">A,4;B,3;C,6;D,5;C,+2;B,-;E,5;A,-;F,10</p>
+      </div>
+      <div class ='row'>
+        <div class = 'option'>
+      <input type="radio" id="pattern3" name="patterns" value="numbers3" />
+      <label for="pattern3"  >Kolmas:</label>
+        </div>
+      <p id="numbers3">A,2;B,3;C,4;D,5;B,-;E,7;D,-;E,+3;F,10</p>
+      </div>
+      <div class ='row'>
+        <div class = 'option'>
+      <input type="radio" id="pattern4" name="patterns" value="numbers4" />
+      <label for="pattern4">Enda oma:</label>
+        </div>
+      <input type="text" id="numbers4" name="input" />
+      </div>
+      </div><br /><br />
+    </div>
+    <h3>
+        Algoritmi käivitamiseks klõpsa nupule
+    </h3>
+    <div>
+        <button type="button" onclick="start()">Käivita</button>
+        <button type="button" onclick="clean()">Puhasta Väljund</button>
+    </div>
+    <div id="container"></div>
+    <p id='failed'></p>
+  </main>
+</body>
+<script src="script.js"></script>
+
+
+</html>
